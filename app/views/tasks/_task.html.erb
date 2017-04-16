@@ -1,3 +1,23 @@
-<p><%= task.content %> </p>
-
-<%= link_to "Delete", project_task_path(@project, task.id), method: :delete, data: { confirm: "voce tem certeza?"} %> 
+<div class="row clearfix">
+	<% if task.completed? %>
+		<div class="complete">
+			<%= link_to "Completado", complete_project_task_path(@project, task.id), method: :patch %> 
+		</div> 
+		<div class="task">
+			<p style="opacity: 0.4" ><strike><%= task.content %> </strike></p>
+		</div>
+		<div class="trash">
+			<%= link_to "Delete", project_task_path(@project, task.id), method: :delete, data: { confirm: "voce tem certeza?"} %> 
+		</div>
+	<% else %>
+		<div class="complete">
+			<%= link_to "Completado", complete_project_task_path(@project, task.id), method: :patch %> 
+		</div> 
+		<div class="task">
+			<p><%= task.content %></p>
+		</div>
+		<div class="trash">
+			<%= link_to "Delete", project_task_path(@project, task.id), method: :delete, data: { confirm: "voce tem certeza?"} %> 
+		</div>
+	<% end %> 
+</div>
