@@ -3,6 +3,10 @@
 	<hr>
 	Gravidade:
     <%= f.select :gravity, options_for_select(['sem_gravidade', 'pouco_grave', 'grave', 'muito_grave', 'extremamente_grave']) %>
+	Urgencia:
+    <%= f.select :urgency, options_for_select(['pode_esperar', 'pouco_urgente', 'o_mais_rapido_possivel', 'urgente', 'acao_imediata']) %>
+	Tendencia:
+    <%= f.select :tendency, options_for_select(['nao_ira_mudar', 'ira_piorar_a_longo_prazo', 'ira_piorar', 'ira_piorar_em_pouco_tempo', 'ira_piorar_rapidamente']) %>
 	<hr>
 	<%= f.submit %> 	
 <% end %> 
