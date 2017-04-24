@@ -6,8 +6,9 @@
 			<% end %> 
 		</div> 
 		<div class="todo_item">
-			<p style="opacity: 0.4" ><strike><%= task.content %> </strike></p>
+			<p style="opacity: 0.4" ><strike><%= "#{task.content} - #{task.gravity}" %> </strike></p>
 		</div>
+		
 		<div class="trash">
 			<%= link_to project_task_path(@project, task.id), method: :delete, data: { confirm: "voce tem certeza?"} do %>
 				<i class="fa fa-trash"></i>	
@@ -20,8 +21,9 @@
 			<% end %> 
 		</div> 
 		<div class="todo_item">
-			<p><%= task.content %></p>
+			<p><%= "#{task.content} - #{task.gravity}" %></p>
 		</div>
+		
 		<div class="trash">
 			<%= link_to project_task_path(@project, task.id), method: :delete, data: { confirm: "voce tem certeza?"} do %>
 				<i class="fa fa-trash"></i>	
