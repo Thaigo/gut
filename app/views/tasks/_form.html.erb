@@ -1,12 +1,12 @@
-<%= form_for([@project, @project.tasks.build]) do |f| %>
-	<%= f.text_field :content, placeholder: 'New Task' %> 	
+<%= simple_form_for([@project, @project.tasks.build]) do |f| %>
+	<%= f.input :content, placeholder: 'New Task' %> 	
 	<hr>
-	Gravidade:
-    <%= f.select :gravity, options_for_select(['sem_gravidade', 'pouco_grave', 'grave', 'muito_grave', 'extremamente_grave']) %>
-	Urgencia:
-    <%= f.select :urgency, options_for_select(['pode_esperar', 'pouco_urgente', 'o_mais_rapido_possivel', 'urgente', 'acao_imediata']) %>
-	Tendencia:
-    <%= f.select :tendency, options_for_select(['nao_ira_mudar', 'ira_piorar_a_longo_prazo', 'ira_piorar', 'ira_piorar_em_pouco_tempo', 'ira_piorar_rapidamente']) %>
+	
+    <%= f.input :gravity, collection: 1..5, as: :radio_buttons, class:"radio-inline" %> 
+	
+    <%= f.input :urgency, collection: 1..5, as: :radio_buttons, class:"radio-inline" %> 
+	
+    <%= f.input :tendency, collection: 1..5, as: :radio_buttons, class:"radio-inline" %> 
 	<hr>
 	<%= f.submit %> 	
 <% end %> 
