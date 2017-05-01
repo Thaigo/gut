@@ -34,7 +34,7 @@ O fato de "dar notas de 1 a 5" pode parecer um pouco subjetivo. Logo, é sugerid
 
 1 = pode esperar
 
-#### Tendência (para melhor mensurar esse aspecto, sugere-se pensar "se nada for feito...")
+### Tendência (para melhor mensurar esse aspecto, sugere-se pensar "se nada for feito...")
 5 = ...irá piorar rapidamente
 
 4 = ...irá piorar em pouco tempo
@@ -47,6 +47,6 @@ O fato de "dar notas de 1 a 5" pode parecer um pouco subjetivo. Logo, é sugerid
 
 Ao final, será possível a priorização das ações nos aspectos da organização/projeto mais impactantes.
 
-'Segue abaixo um modelo fiel ao conceito do GUT. Mas pode ser alterado como preferir.'
+#### 'Segue abaixo um modelo fiel ao conceito do GUT. Mas pode ser alterado como preferir.'
 
 
