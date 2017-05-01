@@ -34,7 +34,7 @@ O fato de "dar notas de 1 a 5" pode parecer um pouco subjetivo. Logo, é sugerid
 
 1 = pode esperar
 
-## Tendência (para melhor mensurar esse aspecto, sugere-se pensar "se nada for feito...")
+#### Tendência (para melhor mensurar esse aspecto, sugere-se pensar "se nada for feito...")
 5 = ...irá piorar rapidamente
 
 4 = ...irá piorar em pouco tempo
