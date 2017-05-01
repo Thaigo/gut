@@ -49,4 +49,6 @@ Ao final, será possível a priorização das ações nos aspectos da organizaç
 
 #### 'Segue abaixo um modelo fiel ao conceito do GUT. Mas pode ser alterado como preferir.'
 
+![gut](https://github.com/Thaigo/gut/blob/master/public/gut.png)
+
 
